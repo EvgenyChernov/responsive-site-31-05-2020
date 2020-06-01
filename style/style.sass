@@ -1,0 +1,298 @@
+////////////////// обнуление стилей //////////////////
+*
+    margin: 0
+    padding: 0
+    border: 0
+
+*, *:before, *:after
+    box-sizing: border-box
+
+a:focus, a:active
+    outline: none
+
+a:focus, a:active
+    outline: none
+
+nav, footer, header, aside
+    display: block
+
+html,body
+    height: 100%
+    width: 100%
+    font-size: 100%
+    line-height: 1
+    font-size: 14px
+    -ms-text-size-adjust: 100%
+    -moz-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+
+input,button,textarea
+    font-family: inherit
+
+input::-ms-clear
+    display: none
+
+button
+    cursor: pointer
+
+button::-moz-focus-inner
+    padding: 0
+    border: 0
+
+a, a:visited, a:hover
+    text-decoration: none
+
+ul li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,h2,h3,h4,h5,h6
+    font-size: inherit
+    font-weight: 400
+ 
+////////////////// адаптив //////////////////
+    
+section,
+header,
+footer 
+    padding: 0 15px
+
+
+@media (min-width: 376px) and (max-width: 766px)
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 188px)
+       
+
+    .header
+        height: 92px
+
+    .logo_padding
+        display: flex
+        padding: 20px 24px
+
+    .address-book-link_padding
+        display: flex
+        padding: 24px 24px
+
+    .promo
+        &__content
+            align-items: center
+        &__h2
+            text-align: center
+            font-size: 32px
+            line-height: 37px
+            padding: 0 56px
+            font-weight: 300
+
+        &__p
+            padding-top: 12px
+            text-align: center
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+        &__button-see-project
+            font-size: 12px
+            line-height: 26px
+            height: 27px
+            width: 108px
+            margin-top: 32px
+            margin-bottom: 41px
+        
+    .what-do
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__h3
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            color: #000000
+            padding-top: 48px
+
+        &__item 
+            width: 335px
+            padding-left: 30px
+            padding-right: 41px
+            margin-top: 32px
+            position: relative
+            min-height: 448px
+        &__item-img-box
+            height: 154px
+            width: 100%
+            display: flex
+            align-items: flex-end
+            justify-content: center
+        &__img
+            
+        &__h4   
+            padding-top: 47px
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.05em
+        &__p
+            padding-top: 13px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #1F3F68
+            opacity: 0.6
+
+        &__button-more
+            
+            display: flex
+            align-items: center
+            align-self: flex-start
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.05em
+            color: #5A98D0
+            position: absolute
+            bottom: 22px
+            left: 30px
+        &__button-more-img
+            margin-left: 9px
+
+    .our-project
+        &__text
+            padding-top: 64px
+            padding-bottom: 98px
+            width: 343px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__h3
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            color: #000000
+        &__p
+            padding-top: 32px
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #222222
+        &__narrow-box
+
+        &__item-narrow
+            display: flex
+            width: 343px
+            height: 144.42px
+            background-image: url(../img/background/project-1.png)
+            background-size: contain
+        &__item-narrow-h3
+            display: flex
+            justify-content: flex-start
+            width: min-content
+            white-space: nowrap
+           
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #FFFFFF
+            padding: 16px
+           
+
+@media (min-width: 768px) and (max-width: 1365px)
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 384px)
+        background: yellow
+
+
+@media (min-width: 1366px) 
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 683px)
+        background: darkgreen
+
+////////////////// общие стили //////////////////
+body
+    font-family: 'Roboto'
+////////////////// index.html--start //////////////////
+
+.header
+    display: flex
+    justify-content: space-between
+   
+
+.promo
+    background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%)
+    &__content
+        display: flex
+        flex-direction: column
+    &__h2
+        letter-spacing: 0.04em
+        &_blue
+            color: #1F3F68
+    &__p
+        &_color
+            color: #1F3F68
+    &__button-see-project
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #FFFFFF
+        &_background
+            background: #5A98D0
+            box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+            border-radius: 10px
+
+.what-do
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    &__h3
+        font-weight: 300
+        text-align: center
+
+    &__item 
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #FFFFFF
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+        border-radius: 10px
+
+
+   
+
+
+
+
+.footer 
+
+    .footer__top 
+
+    .footer__top-content 
+
+    .fooАter__top-content-h3 
+
+    .footer__top-content-p 
+
+    .footer__button 
+
+    .footer__bottom 
+
+    .footer__bottom-content 
+
+    .footer__bottom-content-ul 
+
+    .footer__bottom-content-li 
+
+    .footer__bottom-copyright 
