@@ -1,0 +1,1692 @@
+////////////////// обнуление стилей //////////////////
+*
+    margin: 0
+    padding: 0
+    border: 0
+
+*, *:before, *:after
+    box-sizing: border-box
+
+a:focus, a:active
+    outline: none
+
+a:focus, a:active
+    outline: none
+
+nav, footer, header, aside
+    display: block
+
+html,body
+    height: 100%
+    width: 100%
+    font-size: 100%
+    line-height: 1
+    font-size: 14px
+    -ms-text-size-adjust: 100%
+    -moz-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+
+input,button,textarea
+    font-family: inherit
+
+input::-ms-clear
+    display: none
+
+button
+    cursor: pointer
+
+button::-moz-focus-inner
+    padding: 0
+    border: 0
+
+a, a:visited, a:hover
+    text-decoration: none
+
+ul li
+    list-style: none
+
+img
+    vertical-align: top
+
+h1,h2,h3,h4,h5,h6
+    font-size: inherit
+    font-weight: 400
+ 
+
+////////////////// общие стили //////////////////
+body
+    font-family: 'Roboto'
+////////////////// index.html--start //////////////////
+
+
+@media  (max-width: 766px)
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 188px)
+       
+
+    .header
+        height: 92px
+        display: flex
+        justify-content: space-between
+    .logo_padding
+        display: flex
+        padding: 20px 24px
+
+    .fas_adress
+        font-size: 45px
+        color: #1F3F68
+
+    .address-book-link_padding,
+    .menu-link_padding
+        display: flex
+        padding: 24px 24px
+
+    .promo
+        background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%)
+        &__content
+            align-items: center
+            display: flex
+            flex-direction: column
+        &__h2
+            text-align: center
+            font-size: 32px
+            line-height: 37px
+            padding: 0 56px
+            font-weight: 300
+            letter-spacing: 0.04em
+            &_blue
+                color: #1F3F68
+
+        &__p
+            padding-top: 12px
+            text-align: center
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            &_color
+                color: #1F3F68
+        &__button-see-project
+            font-size: 12px
+            line-height: 26px
+            height: 27px
+            width: 108px
+            margin-top: 32px
+            margin-bottom: 41px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #FFFFFF
+            &_background
+                background: #5A98D0
+                box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+                border-radius: 10px
+            &:hover
+                background:#1F3F68
+        &__content-illustrartion
+            display: none
+        
+    .what-do
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__h3
+            font-weight: 300
+            text-align: center
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            color: #000000
+            padding-top: 48px
+
+        &__item 
+            display: flex
+            flex-direction: column
+            align-items: center
+            background: #FFFFFF
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            width: 335px
+            padding-left: 30px
+            padding-right: 41px
+            margin-top: 32px
+            position: relative
+            min-height: 448px
+        &__item-img-box
+            height: 154px
+            width: 100%
+            display: flex
+            align-items: flex-end
+            justify-content: center
+        &__img
+            
+        &__h4   
+            padding-top: 47px
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.05em
+        &__p
+            padding-top: 13px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #1F3F68
+            opacity: 0.6
+
+        &__button-more
+            
+            display: flex
+            align-items: center
+            align-self: flex-start
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.05em
+            color: #5A98D0
+            position: absolute
+            bottom: 22px
+            left: 30px
+        &__button-more-img
+            margin-left: 9px
+
+    .our-project
+        &__text
+            padding-top: 64px
+            padding-bottom: 98px
+            width: 343px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__h3
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            color: #000000
+        &__p
+            padding-top: 32px
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #222222
+        &__narrow-box
+
+        &__item-narrow
+            display: flex
+            width: 343px
+            height: 144.42px
+            background-image: url(../img/background/project-1.png)
+            background-size: 100%
+            border-radius: 10px
+        &__item-narrow-h3
+            display: flex
+            justify-content: flex-end
+            width: min-content
+            white-space: nowrap
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #FFFFFF
+            padding: 16px
+            width: 100%
+        &__middle-box
+            padding-bottom: 64px
+        &__item-one-middle
+            margin-top: 16px
+            display: flex
+            width: 343px
+            height: 255px
+            background-image: url(../img/background/project-2.png)
+            background-size: 100%
+            background-repeat: no-repeat
+            border-radius: 10px
+        &__item-one-middle-h3
+            font-size: 16px
+            line-height: 19px
+            padding-top: 26px
+            padding-left: 18px
+            color: #FFFFFF
+        &__item-thwo-middle
+            margin-top: 16px
+            display: flex
+            width: 343px
+            height: 255px
+            background-image: url(../img/background/project-3.png)
+            background-size: 100%
+            background-repeat: no-repeat
+            border-radius: 10px
+        &__item-thwo-middle-h3
+            font-size: 16px
+            line-height: 19px
+            padding-top: 16px
+            padding-left: 16px
+            color: #FFFFFF
+
+    .footer
+        background: #316099
+        &__top
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-top: 18px
+            padding-bottom: 41px
+            border-bottom: 1px solid rgba( 255, 255, 255, 0.4)
+        &__top-content
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__top-content-h3
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            color: #FFFFFF
+        &__top-content-p
+            padding-top: 32px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            opacity: 0.6
+        &__button
+            margin-top: 40px
+            background: #5A98D0
+            width: 108px
+            height: 31px
+            font-size: 16px
+            line-height: 26px
+            display: flex
+            align-items: center
+            justify-content: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+            &:hover
+                background:#1F3F68
+
+        &__bottom  
+
+        &__bottom-content
+            display: flex
+            flex-direction: column
+            padding: 24px 44px 0 32px 
+            width: 100%
+        &__bottom-content-li
+            padding: 8px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+        &__bottom-copyright 
+            padding-top: 37px
+            padding-bottom: 32px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            opacity: 0.4
+
+@media (min-width: 768px) and (max-width: 1365px)
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 384px)
+
+    .header
+        height: 92px
+        display: flex
+        justify-content: space-between
+    .logo_padding
+        display: flex
+        padding: 47px 0px 0px 32px
+
+    .fas_adress
+        font-size: 45px
+        color: #1F3F68
+
+    .address-book-link_padding,
+    .menu-link_padding
+        display: flex
+        padding: 52px 34px 0px 0px
+
+    .promo
+        background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%)
+        
+        
+        &__content
+            align-items: flex-start
+            display: flex
+            flex-direction: column
+            position: relative
+            height: 700px
+            padding-left: 32px
+        &__h2
+            display: flex
+            width: 504px
+            flex-wrap: 
+            text-align: left
+            font-size: 64px
+            line-height: 74px
+            padding: 120px 0 0 0
+            font-weight: 300
+            letter-spacing: 0.04em
+            &_blue
+                color: #1F3F68
+
+        &__p
+            width: 390px
+            padding-top: 32px
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            &_color
+                color: #1F3F68
+        &__button-see-project
+            font-size: 16px
+            line-height: 26px
+            width: 220px
+            height: 56px
+            margin-top: 72px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #FFFFFF
+            letter-spacing: 0.04em
+            &_background
+                background: #5A98D0
+                box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+                border-radius: 10px
+            &:hover
+                background:#1F3F68
+        &__content-illustrartion
+            display: flex
+            position: absolute
+            right: 32px
+            bottom: 108px
+            width: 380.65px
+            height: 323.18px
+            background: url(../img/icon/illustration-1.svg)
+            background-size: 100%
+
+    .what-do
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__h3
+            font-weight: 300
+            text-align: center
+            font-weight: 300
+            font-size: 36px
+            line-height: 46px
+            text-align: center
+            color: #000000
+            padding: 64px 40px 32px 40px
+            letter-spacing: 0.05em
+        &__item 
+            display: flex
+            flex-direction: column
+            align-items: center
+            background: #FFFFFF
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            width: 335px
+            padding-left: 30px
+            padding-right: 41px
+            margin-top: 32px
+            position: relative
+            min-height: 448px
+        &__item-img-box
+            height: 154px
+            width: 100%
+            display: flex
+            align-items: flex-end
+            justify-content: center
+        &__img
+            
+        &__h4   
+            padding-top: 47px
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.05em
+        &__p
+            padding-top: 13px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #1F3F68
+            opacity: 0.6
+
+        &__button-more
+            
+            display: flex
+            align-items: center
+            align-self: flex-start
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.05em
+            color: #5A98D0
+            position: absolute
+            bottom: 22px
+            left: 30px
+        &__button-more-img
+            margin-left: 9px
+
+    .our-project
+        display: flex
+        flex-direction: column
+        width: 100%
+
+        &__text
+            padding-top: 64px
+            padding-bottom: 98px
+            
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__h3
+            font-weight: 300
+            font-size: 36px
+            line-height: 46px
+            text-align: center
+            color: #000000
+            letter-spacing: 0.05em
+        &__p
+            padding-top: 28px
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #222222
+            width: 484px
+        &__narrow-box
+            width: 100%
+            display: flex
+            padding: 0 35px 0 32px 
+        &__item-narrow
+            display: flex
+            width: 704.62px
+            height: 296.68px
+            background-image: url(../img/background/project-1.png)
+            background-size: 100%
+            border-radius: 10px
+        &__item-narrow-h3
+            display: flex
+            justify-content: flex-end
+            width: min-content
+            white-space: nowrap
+            font-style: normal
+            font-weight: normal
+            font-size: 32px
+            line-height: 46px
+            color: #FFFFFF
+            padding: 64px
+            width: 100%
+            letter-spacing: 0.05em
+        &__middle-box
+            padding: 32px 32px 109px 32px
+            display: flex
+            justify-content: space-between
+        &__item-one-middle
+            display: flex
+            width: 336px
+            height: 253px
+            background-image: url(../img/background/project-2.png)
+            background-size: 100%
+            background-repeat: no-repeat
+            border-radius: 10px
+        &__item-one-middle-h3
+            font-size: 28px
+            line-height: 46px
+            padding-top: 19px
+            padding-left: 19px
+            color: #FFFFFF
+            letter-spacing: 0.05em
+        &__item-thwo-middle
+            display: flex
+            width: 336px
+            height: 253px
+            background-image: url(../img/background/project-3.png)
+            background-size: 100%
+            background-repeat: no-repeat
+            border-radius: 10px
+        &__item-thwo-middle-h3
+            font-size: 28px
+            line-height: 46px
+            padding-top: 19px
+            padding-left: 19px
+            color: #FFFFFF
+            letter-spacing: 0.05em
+
+    .footer
+        background: #316099
+        &__top
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 47px 123px 64px 124px
+            border-bottom: 1px solid rgba( 255, 255, 255, 0.4)
+        &__top-content
+            width: 308px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__top-content-h3
+            font-style: normal
+            font-weight: normal
+            font-size: 36px
+            line-height: 46px
+            color: #FFFFFF
+        &__top-content-p
+            padding-top: 17px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            opacity: 0.6
+        &__button
+            margin-top: 40px
+            background: #5A98D0
+            width: 133.04px
+            height: 31.48px
+            font-size: 16px
+            line-height: 26px
+            display: flex
+            align-items: center
+            justify-content: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+            &:hover
+                background:#1F3F68
+
+        &__bottom  
+            padding: 23px 129px 64px 124px
+        &__bottom-content
+            display: flex
+            flex-direction: column
+            padding: 24px 44px 0 32px 
+            width: 100%
+        &__bottom-content-li
+            padding: 12px 0 12px 26px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            list-style-type: upper-alpha
+            list-style-position: outside
+        &__bottom-copyright 
+            padding-top: 50px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            opacity: 0.4
+
+@media (min-width: 1366px) 
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 683px)
+
+
+    .header
+        height: 92px
+        display: flex
+        justify-content: space-between
+    .logo_padding
+        display: flex
+        padding: 42px 0px 0px 113px
+
+    .fas_adress
+        font-size: 45px
+        color: #1F3F68
+
+    .address-book-link_padding,
+    .menu-link_padding
+        display: flex
+        padding: 39px 113px 0px 0px
+
+    .promo
+        background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%)
+        
+        
+        &__content
+            align-items: flex-start
+            display: flex
+            flex-direction: column
+            position: relative
+            height: 700px
+            margin: 0 113px 
+            position: relative
+        &__h2
+            display: flex
+            width: 504px
+            flex-wrap: 
+            text-align: left
+            font-size: 64px
+            line-height: 74px
+            padding: 120px 0 0 0
+            font-weight: 300
+            letter-spacing: 0.04em
+            &_blue
+                color: #1F3F68
+
+        &__p
+            width: 390px
+            padding-top: 32px
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            &_color
+                color: #1F3F68
+        &__button-see-project
+            font-size: 16px
+            line-height: 26px
+            width: 220px
+            height: 56px
+            margin-top: 86px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #FFFFFF
+            letter-spacing: 0.04em
+            &_background
+                background: #5A98D0
+                box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+                border-radius: 10px
+            &:hover
+                background:#1F3F68
+        &__content-illustrartion
+            display: flex
+            position: absolute
+            right: 0px
+            bottom: 0px
+            width: 648.69px
+            height: 549.04px
+            background: url(../img/icon/illustration-1-big.svg)
+            background-size: 100%
+
+
+    .what-do
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__h3
+            font-weight: 300
+            text-align: center
+            font-weight: 300
+            font-size: 36px
+            line-height: 46px
+            text-align: center
+            color: #000000
+            padding: 64px 40px 64px 40px
+            letter-spacing: 0.05em
+        &__box
+            display: flex
+
+        &__item 
+            display: flex
+            flex-direction: column
+            align-items: center
+            background: #FFFFFF
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            width: 359px
+            padding-left: 30px
+            padding-right: 41px
+            position: relative
+            min-height: 448px
+            margin: 0 16px
+        &__item-img-box
+            height: 154px
+            width: 100%
+            display: flex
+            align-items: flex-end
+            justify-content: center
+        &__img
+            
+        &__h4   
+            padding-top: 47px
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.05em
+        &__p
+            padding-top: 13px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #1F3F68
+            opacity: 0.6
+
+        &__button-more
+            
+            display: flex
+            align-items: center
+            align-self: flex-start
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.05em
+            color: #5A98D0
+            position: absolute
+            bottom: 22px
+            left: 30px
+        &__button-more-img
+            margin-left: 9px
+
+    .our-project
+        display: flex
+        flex-direction: column
+        width: 100%
+
+        &__text
+            padding-top: 64px
+            padding-bottom: 98px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__h3
+            font-weight: 300
+            font-size: 36px
+            line-height: 46px
+            text-align: center
+            color: #000000
+            letter-spacing: 0.05em
+        &__p
+            padding-top: 32px
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.05em
+            color: #222222
+            width: 750px
+        &__narrow-box
+            width: 100%
+            display: flex
+            padding: 0 113px
+        &__item-narrow
+            display: flex
+            width: 1140px
+            height: 480px
+            background-image: url(../img/background/project-1.png)
+            background-size: 100%
+            border-radius: 10px
+        &__item-narrow-h3
+            display: flex
+            justify-content: flex-end
+            width: min-content
+            white-space: nowrap
+            font-style: normal
+            font-weight: normal
+            font-size: 32px
+            line-height: 46px
+            color: #FFFFFF
+            padding: 64px
+            width: 100%
+            letter-spacing: 0.05em
+        &__middle-box
+            padding: 32px 113px 112px
+            display: flex
+            justify-content: space-between
+        &__item-one-middle
+            display: flex
+            width: 554px
+            height: 417px
+            background-image: url(../img/background/project-2.png)
+            background-size: 100%
+            background-repeat: no-repeat
+            border-radius: 10px
+        &__item-one-middle-h3
+            font-size: 28px
+            line-height: 46px
+            padding-top: 19px
+            padding-left: 19px
+            color: #FFFFFF
+            letter-spacing: 0.05em
+        &__item-thwo-middle
+            display: flex
+            width: 554px
+            height: 417px
+            background-image: url(../img/background/project-3.png)
+            background-size: 100%
+            background-repeat: no-repeat
+            border-radius: 10px
+        &__item-thwo-middle-h3
+            font-size: 28px
+            line-height: 46px
+            padding-top: 19px
+            padding-left: 19px
+            color: #FFFFFF
+            letter-spacing: 0.05em
+
+    .footer
+        background: #316099
+        &__top
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 47px 123px 64px 124px
+            border-bottom: 1px solid rgba( 255, 255, 255, 0.4)
+        &__top-content
+            width: 447px
+            display: flex
+            flex-direction: column
+            align-items: center
+            
+        &__top-content-h3
+            width: 340px
+            font-style: normal
+            font-weight: normal
+            font-size: 36px
+            line-height: 46px
+            color: #FFFFFF
+            align-self: flex-start
+        &__top-content-p
+            padding-top: 17px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            opacity: 0.6
+        &__button
+            margin-top: 40px
+            background: #5A98D0
+            width: 236.63px
+            height: 56px
+            font-size: 16px
+            line-height: 26px
+            display: flex
+            align-items: center
+            justify-content: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+            &:hover
+                background:#1F3F68
+
+        &__bottom  
+            padding: 23px 129px 64px 124px
+        &__bottom-content
+            display: flex
+            flex-direction: column
+            padding: 24px 0px 0 32px 
+            width: 100%
+        &__bottom-content-ul
+            display: flex
+            justify-content: space-between
+            width: 100%
+        &__bottom-content-li
+            width: 309px
+            padding: 12px 0 12px 26px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            list-style-type: upper-alpha
+            list-style-position: outside
+        &__bottom-copyright 
+            padding-top: 50px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.05em
+            color: #FFFFFF
+            opacity: 0.4
+////////////////// index.html--end //////////////////
+
+
+#switcher
+    position: absolute
+    left: -9999999px
+    visibility: hidden
+
+@media  (max-width: 766px)
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 188px)
+
+    .nav
+        position: fixed
+        width: 50vw
+        min-height: 100vh
+        background: rgba(16, 112, 177, 1)
+        top: 0
+        left: 100vw
+        z-index: 2
+        transition: all .4s
+    .close
+        position: absolute
+        top: 25px
+        right: 30px
+    .fas_close,
+    .fas_gamburger
+        font-size: 45px
+        color: #1F3F68
+    .menu
+        height: 100vh
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+
+        &__link
+            color: #fff
+            padding: 16px 16px 16px 56px
+            font-size: 24px
+            display: block
+            width: 100vw
+            transition: all .2s
+            &:hover
+                background-color: rgba(152, 195, 232, 0)
+
+    #switcher:checked ~ .nav 
+        left: 50vw
+
+    .contact-head 
+        height: 248px
+        background-image: url(../img/background/contact-us.svg)
+        background-position: -395px
+        background-repeat: no-repeat
+
+        &__content
+            display: flex
+            flex-direction: column
+            align-items: center
+
+        &__h3
+            padding-top: 48px
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 28px
+            text-align: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+
+        &__p
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 30px
+            text-align: center
+            color: rgba(255, 255, 255, 0.6)
+            padding: 32px 34px 0 34px
+
+    .adress
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 32px
+
+        &__content
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-bottom: 32px
+
+        &__content-one
+            padding: 46px 37px 32px 37px
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+
+        &__content-one-img
+            justify-content: center
+            display: flex
+            width: 300px
+            height: 181px
+            background-image: url(../img/icon/icon-4.svg)
+            background-repeat: no-repeat
+            margin-bottom: 32px
+
+        &__content-one-h4
+            padding-top: 32px
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            text-align: left
+            padding-bottom: 24px
+
+        &__content-one-p
+            padding-right: 30px   
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.6
+
+        &__content-one-li
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.6
+            padding-bottom: 20px
+
+        &__content-one-li-img-phone,
+        &__content-one-url-img-world,
+        &__content-one-email-img-mail
+            padding-right: 19px  
+
+
+        &__content-two
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__content-two-form
+            width: 342.67px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            background: #FFFFFF
+            box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            padding: 36px
+            
+        &__content-two-form-h4
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+
+        &__content-two-form-label
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.8
+            margin-top: 20px
+
+        &__content-two-form-input-name,
+        &__content-two-form-input-email
+            display: flex
+            border: 1px solid rgba(53, 110, 173, 0.4)
+            box-sizing: border-box
+            border-radius: 10px
+            height: 46.26px
+            width: 100%
+            padding: 13px 26px
+            font-weight: 300
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: rgba(31, 63, 104, 1)
+        
+        &__content-two-form-textarea-message
+            border: 1px solid rgba(53, 110, 173, 0.4)
+            box-sizing: border-box
+            border-radius: 10px
+            font-weight: 300
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: rgba(31, 63, 104, 1)
+            width: 100%
+            min-height: 93px
+            padding: 13px 26px
+
+        &__content-two-form-button
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #5A98D0
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            height: 46.26px
+            width: 100%
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+            margin-top: 61px
+            &:hover
+                background:#1F3F68
+
+        &__map
+            display: flex
+            height: 349px
+            overflow: hidden
+            width: 375px
+            
+        
+@media (min-width: 768px) and (max-width: 1365px)
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 384px)
+
+    .nav
+        position: fixed
+        width: 30vw
+        min-height: 100vh
+        background: rgba(16, 112, 177, 1)
+        top: 0
+        left: 100vw
+        z-index: 2
+        transition: all .4s
+
+    .close
+        position: absolute
+        top: 25px
+        right: 30px
+
+    .fas_close,
+    .fas_gamburger
+        font-size: 45px
+        color: #1F3F68
+    .menu
+        height: 100vh
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+
+        &__link
+            color: #fff
+            padding: 16px 16px 16px 56px
+            font-size: 24px
+            display: block
+            width: 100vw
+            transition: all .2s
+            &:hover
+                background-color: rgba(152, 195, 232, 0)
+
+    #switcher:checked ~ .nav 
+        left: 70vw
+
+    .fas_gamburger
+        font-size: 45px
+        color: #1F3F68
+
+    .contact-head 
+        margin-top: 49px
+        height: 248px
+        background-image: url(../img/background/contact-us.svg)
+        background-position: center
+        background-repeat: no-repeat
+
+        &__content
+            display: flex
+            flex-direction: column
+            align-items: center
+
+        &__h3
+            padding-top: 48px
+            font-style: normal
+            font-weight: 500
+            font-size: 44px
+            line-height: 61px
+            text-align: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+        &__p
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+            text-align: center
+            color: rgba(255, 255, 255, 0.6)
+            padding: 24px 34px 0 34px
+            width: 500px
+
+    .adress
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 64px
+
+        &__content
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-bottom: 64px
+
+        &__content-one
+            padding: 69px 37px 32px 37px
+            width: 340px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+
+        &__content-one-img
+            justify-content: center
+            display: flex
+            width: 300px
+            height: 181px
+            background-image: url(../img/icon/icon-4.svg)
+            background-repeat: no-repeat
+            margin-bottom: 32px
+
+        &__content-one-h4
+            padding-top: 32px
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            text-align: left
+            padding-bottom: 24px
+
+        &__content-one-p
+            padding-right: 30px   
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.6
+
+        &__content-one-li
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.6
+            padding-bottom: 20px
+
+        &__content-one-li-img-phone,
+        &__content-one-url-img-world,
+        &__content-one-email-img-mail
+            padding-right: 19px  
+
+
+        &__content-two
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__content-two-form
+            width: 520px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            background: #FFFFFF
+            box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            padding: 53px
+            
+        &__content-two-form-h4
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            width: 160px
+
+        &__content-two-form-label
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.8
+            margin-top: 20px
+
+        &__content-two-form-input-name,
+        &__content-two-form-input-email
+            display: flex
+            border: 1px solid rgba(53, 110, 173, 0.4)
+            box-sizing: border-box
+            border-radius: 10px
+            height: 70.2px
+            width: 100%
+            padding: 13px 26px
+            font-weight: 300
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: rgba(31, 63, 104, 1)
+        
+        &__content-two-form-textarea-message
+            border: 1px solid rgba(53, 110, 173, 0.4)
+            box-sizing: border-box
+            border-radius: 10px
+            font-weight: 300
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: rgba(31, 63, 104, 1)
+            width: 100%
+            min-height: 140.4px
+            padding: 13px 26px
+
+        &__content-two-form-button
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #5A98D0
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            height: 70.2px
+            width: 100%
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+            margin-top: 61px
+            &:hover
+                background:#1F3F68
+
+        &__map
+            display: flex
+            width: 768px
+            height: 392px
+            overflow: hidden
+               
+
+@media (min-width: 1366px) 
+
+    section,
+    header,
+    footer 
+        padding: 0 calc(50vw - 683px)
+    .nav
+        position: fixed
+        width: 30vw
+        height: min-content
+        background: rgba(16, 112, 177, 1)
+        top: 0
+        right: -100vw
+        z-index: 2
+        transition: all .4s
+        border-radius: 0 0 0 15px
+    .close
+        position: absolute
+        top: 25px
+        right: 30px
+
+    .fas_close,
+    .fas_gamburger
+        font-size: 45px
+        color: #1F3F68
+    .menu
+        padding-top: 80px
+        padding-bottom: 40px
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+
+
+        &__link
+            color: #fff
+            padding: 25px 16px 25px 56px
+            font-size: 32px
+            display: block
+            width: 100%
+            transition: all .3s
+            &:hover
+                background-color: rgba(152, 195, 232, 0)
+
+    #switcher:checked ~ .nav 
+        right: 0vw
+
+    .fas_gamburger
+        font-size: 45px
+        color: #1F3F68
+
+    .contact-head 
+        margin-top: 49px
+        height: 248px
+        background-image: url(../img/background/contact-us.svg)
+        background-position: center
+        background-repeat: no-repeat
+
+        &__content
+            display: flex
+            flex-direction: column
+            align-items: center
+
+        &__h3
+            padding-top: 48px
+            font-style: normal
+            font-weight: 500
+            font-size: 44px
+            line-height: 61px
+            text-align: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+        &__p
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+            text-align: center
+            color: rgba(255, 255, 255, 0.6)
+            padding: 24px 34px 0 34px
+            width: 765px
+
+    .adress
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 96px
+
+        &__content
+            padding-top: 64px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            padding-bottom: 96px
+
+        &__content-one
+            padding: 69px 37px 0px 37px
+            width: 340px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+
+        &__content-one-img
+            justify-content: center
+            display: flex
+            width: 300px
+            height: 181px
+            background-image: url(../img/icon/icon-4.svg)
+            background-repeat: no-repeat
+            margin-bottom: 22px
+
+        &__content-one-h4
+            padding-top: 32px
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            text-align: left
+            padding-bottom: 24px
+
+        &__content-one-p
+            padding-right: 30px   
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.6
+
+        &__content-one-li
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.6
+            padding-bottom: 14px
+
+        &__content-one-li-img-phone,
+        &__content-one-url-img-world,
+        &__content-one-email-img-mail
+            padding-right: 19px  
+
+
+        &__content-two
+            width: min-content
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-left: 84px
+        &__content-two-form
+            width: 520px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            background: #FFFFFF
+            box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            padding: 53px
+            
+        &__content-two-form-h4
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            width: 160px
+
+        &__content-two-form-label
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: #1F3F68
+            opacity: 0.8
+            margin-top: 20px
+
+        &__content-two-form-input-name,
+        &__content-two-form-input-email
+            display: flex
+            border: 1px solid rgba(53, 110, 173, 0.4)
+            box-sizing: border-box
+            border-radius: 10px
+            height: 70.2px
+            width: 100%
+            padding: 13px 26px
+            font-weight: 300
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: rgba(31, 63, 104, 1)
+        
+        &__content-two-form-textarea-message
+            border: 1px solid rgba(53, 110, 173, 0.4)
+            box-sizing: border-box
+            border-radius: 10px
+            font-weight: 300
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.04em
+            color: rgba(31, 63, 104, 1)
+            width: 100%
+            min-height: 140.4px
+            padding: 13px 26px
+
+        &__content-two-form-button
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #5A98D0
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+            border-radius: 10px
+            height: 70.2px
+            width: 100%
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 26px
+            text-align: center
+            letter-spacing: 0.04em
+            color: #FFFFFF
+            margin-top: 61px
+            &:hover
+                background:#1F3F68
+
+        &__map
+            display: flex
+            width: 940px
+            height: 480px
+            overflow: hidden
